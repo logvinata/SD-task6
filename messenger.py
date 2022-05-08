@@ -202,6 +202,10 @@ class chat:
     def get_message(self, m_id):
         return self._messages[m_id]
 
+    def edit_message(self, m_id, new_text):
+        self._messages[m_id].text = new_text
+        return self._messages[m_id]
+
 
 class message:
     '''message'''
